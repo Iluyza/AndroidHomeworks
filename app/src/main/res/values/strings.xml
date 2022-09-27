@@ -10,4 +10,7 @@
     <string name="tv_nature">Nature</string>
     <string name="tv_vilage">авыл</string>
     <string name="btn_myprofile">Редактировать профиль</string>
+    <string name="tv_kazan">KAZAN</string>
+    <string name="tv_me">about me</string>
+    <string name="tv_subscriptions">317</string>
 </resources>
