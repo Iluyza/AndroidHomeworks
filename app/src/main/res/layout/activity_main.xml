@@ -7,17 +7,17 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tv_nik"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/persikill"
-        android:textSize="25sp"
         android:textColor="@color/black"
+        android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.044"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:id="@+id/textView4" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/iv_main"
@@ -27,7 +27,7 @@
         app:layout_constraintEnd_toStartOf="@+id/tv_publication"
         app:layout_constraintHorizontal_bias="0.114"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nik"
         app:srcCompat="@drawable/main_photo"
         tools:ignore="MissingConstraints" />
 
@@ -89,12 +89,12 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/tv_t_subscribers"
-        app:layout_constraintEnd_toStartOf="@+id/textView7"
+        app:layout_constraintEnd_toStartOf="@+id/tv_subscriptions"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.851" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/tv_subscriptions"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
@@ -108,16 +108,16 @@
 
     <TextView
         android:id="@+id/tv_my_name"
-        android:text="@string/tv_my_name"
         android:layout_width="204dp"
         android:layout_height="43dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="172dp"
+        android:text="@string/tv_my_name"
+        android:textColor="@color/black"
         android:textSize="15sp"
         android:textStyle="bold"
-        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView4"
-        android:layout_marginTop="172dp"
-        android:layout_marginStart="12dp" />
+        app:layout_constraintTop_toTopOf="@+id/tv_nik" />
 
     <TextView
         android:id="@+id/tv_status"
@@ -133,7 +133,7 @@
         app:layout_constraintTop_toTopOf="@+id/iv_main" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/tv_link"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="204dp"
@@ -149,11 +149,11 @@
         android:layout_width="75dp"
         android:layout_height="75dp"
         android:layout_marginBottom="27dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView11"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_about_me_t"
         app:layout_constraintEnd_toStartOf="@+id/iv_kazan"
         app:layout_constraintHorizontal_bias="0.395"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/tv_link"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/me" />
 
@@ -163,10 +163,10 @@
         android:layout_height="75dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="72dp"
-        app:layout_constraintEnd_toEndOf="@+id/textView13"
+        app:layout_constraintEnd_toEndOf="@+id/tv_villige_t"
         app:layout_constraintHorizontal_bias="0.153"
-        app:layout_constraintStart_toEndOf="@+id/textView11"
-        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:layout_constraintStart_toEndOf="@+id/tv_about_me_t"
+        app:layout_constraintTop_toBottomOf="@+id/tv_link"
         app:srcCompat="@drawable/city" />
 
     <ImageView
@@ -175,11 +175,11 @@
         android:layout_height="75dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="104dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView12"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_kazan_t"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.932"
-        app:layout_constraintStart_toEndOf="@+id/textView11"
-        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:layout_constraintStart_toEndOf="@+id/tv_about_me_t"
+        app:layout_constraintTop_toBottomOf="@+id/tv_link"
         app:layout_constraintVertical_bias="0.597"
         app:srcCompat="@drawable/nature" />
 
@@ -193,52 +193,52 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.75"
         app:layout_constraintStart_toEndOf="@+id/iv_villige"
-        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/tv_link"
         app:srcCompat="@drawable/moment" />
 
     <TextView
-        android:text="@string/tv_me"
+        android:id="@+id/tv_about_me_t"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView11"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iv_kazan"
-        android:layout_marginTop="8dp"
         android:layout_marginStart="24dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView12" />
+        android:layout_marginTop="8dp"
+        android:text="@string/tv_me"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_kazan_t"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_kazan" />
 
     <TextView
+        android:id="@+id/tv_kazan_t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
         android:text="@string/tv_kazan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView12"
-        app:layout_constraintTop_toBottomOf="@+id/iv_kazan"
-        android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="@+id/iv_kazan"
-        android:layout_marginStart="16dp" />
+        app:layout_constraintTop_toBottomOf="@+id/iv_kazan" />
 
     <TextView
+        android:id="@+id/tv_villige_t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
         android:text="@string/tv_vilage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView13"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/iv_villige"
-        app:layout_constraintBottom_toBottomOf="@+id/textView12"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_kazan_t"
         app:layout_constraintStart_toStartOf="@+id/iv_villige"
-        android:layout_marginStart="20dp" />
+        app:layout_constraintTop_toBottomOf="@+id/iv_villige"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
-        android:text="@string/tv_nature"
+        android:id="@+id/tv_nature_t"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView14"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/iv_nature"
-        app:layout_constraintBottom_toBottomOf="@+id/textView13"
-        app:layout_constraintStart_toEndOf="@+id/iv_villige"
         android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/tv_nature"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_villige_t"
+        app:layout_constraintStart_toEndOf="@+id/iv_villige"
+        app:layout_constraintTop_toBottomOf="@+id/iv_nature"
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
@@ -274,18 +274,20 @@
         app:layout_constraintVertical_bias="0.643"
         app:srcCompat="@drawable/secondd" />
 
-    <EditText
-        android:id="@+id/et_red"
+    persikill, [29.09.2022 19:11]
+
+    <Button
+        android:id="@+id/btn_red"
         android:layout_width="match_parent"
-        android:layout_height="20sp"
-        android:layout_marginStart="10sp"
-        android:layout_marginEnd="10sp"
-        android:background="@color/grey"
-        android:hint="@string/btn_myprofile"
+        android:layout_height="42dp"
+        android:layout_marginStart="15sp"
+        android:layout_marginEnd="15sp"
+        android:backgroundTint="@color/grey"
+        android:text="@string/btn_myprofile"
         android:textColor="@color/black"
         android:textSize="15sp"
-        android:gravity="center_horizontal"
         android:textStyle="bold"
+        app:cornerRadius="15dp"
         app:layout_constraintBottom_toTopOf="@+id/iv_villige"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

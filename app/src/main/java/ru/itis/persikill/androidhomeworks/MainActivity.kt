@@ -7,20 +7,27 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
+import ru.itis.persikill.androidhomeworks.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
 
-        val mButton1 = findViewById<EditText>(R.id.et_red)
-        val mButton2: TextView = findViewById(R.id.tv_status)
+        setContentView(binding.root)
+        val mButton1 = binding.btnRed
+        val mButton2 = binding.tvStatus
+        var temp = true
 
-        val temp = false
         mButton1.setOnClickListener {
-            if (!temp) {
+            if (temp) {
                 mButton2.visibility = View.GONE
+            } else {
+                mButton2.visibility = View.VISIBLE
             }
+            temp = !temp
         }
     }
 }
