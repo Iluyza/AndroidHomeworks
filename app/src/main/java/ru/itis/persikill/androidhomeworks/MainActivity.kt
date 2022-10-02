@@ -4,6 +4,7 @@ import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import ru.itis.persikill.androidhomeworks.databinding.ActivityMainBinding
 
@@ -23,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         buttonSendPicture = binding.btnSharePictures
 
         buttonSendInternet!!.setOnClickListener {
-            sendEmail()
+            dialPhoneNumber()
         }
 
         buttonSendPicture!!.setOnClickListener {
@@ -41,17 +42,27 @@ class MainActivity : AppCompatActivity() {
         this.startActivity(intent)
     }
 
-    fun sendEmail() {
-        val recipients = arrayOf("asylgareeva03@inbox.ru")
-        val subject = "Hi, how are you!"
-        val content = "This is my test email"
-        var intentEmail: Intent = Intent(Intent.ACTION_SEND, Uri.parse("mailto:"));
-        intentEmail.putExtra(Intent.EXTRA_EMAIL, recipients);
-        intentEmail.putExtra(Intent.EXTRA_SUBJECT, subject);
-        intentEmail.putExtra(Intent.EXTRA_TEXT, content);
-        intentEmail.setType("text/plain");
+//    fun sendEmail() {
+//        val recipients = arrayOf("asylgareeva03@inbox.ru")
+//        val subject = "Hi, how are you!"
+//        val content = "This is my test email"
+//        var intentEmail: Intent = Intent(Intent.ACTION_SEND, Uri.parse("mailto:"));
+//        intentEmail.putExtra(Intent.EXTRA_EMAIL, recipients);
+//        intentEmail.putExtra(Intent.EXTRA_SUBJECT, subject);
+//        intentEmail.putExtra(Intent.EXTRA_TEXT, content);
+//        intentEmail.setType("text/plain");
+//
+//        startActivity(Intent.createChooser(intentEmail, "Choose an email client from..."));
+//    }
 
-        startActivity(Intent.createChooser(intentEmail, "Choose an email client from..."));
+    fun dialPhoneNumber() {
+        val intent = Intent(Intent.ACTION_DIAL).apply {
+            data = Uri.parse("tel:$9656615965")
+        }
+        val chooserIntent = Intent.createChooser(intent,"h")
+        if (chooserIntent.resolveActivity(packageManager) != null) {
+            startActivity(intent)
+        }
     }
 
     private fun shareQuote() {
@@ -59,7 +70,6 @@ class MainActivity : AppCompatActivity() {
         intent.setAction(Intent.ACTION_SEND)
         intent.putExtra(Intent.EXTRA_TEXT,(binding.tvMotivationText).text)
         intent.setType("text/plan")
-
         if (intent.resolveActivity(packageManager) != null) {
             startActivity(intent)
         }

@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">AHW02</string>
     <string name="tv_motivation">Не бойся жить. Не бойся задавать вопросы. Бери от жизни всё! Увеличивай запросы.</string>
-    <string name="btn_open_in_internet">поделиться ссылкой</string>
+    <string name="btn_open_in_internet">поделиться номером</string>
     <string name="btn_instruction">открыть источник вдохновения</string>
     <string name="btn_share_text">поделиться цитатой</string>
 </resources>
