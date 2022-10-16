@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">AndroidHomeworks</string>
+    <string name="app_name">Recycler</string>
+    <string name="title_films">Films</string>
+    <string name="poster_description">Poster</string>
+    <string name="director">Directed by</string>
+    <string name="year">Year</string>
+    <string name="country">Country</string>
+    <string name="description">Description</string>
 </resources>
