@@ -1,5 +1,3 @@
-package ru.itis.persikill.androidhomeworks
-
 import ru.itis.persikill.androidhomeworks.model.Film
 
 object FilmRepository {
