@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">AndroidHomeworks</string>
+    <string name="app_name">List</string>
+    <string name="floating_add_button">Floating add button</string>
+    <string name="delete_button">Delete button</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btn_add">Добавить</string>
+    <string name="et_description">Описание</string>
+    <string name="et_title">Заголовок</string>
+    <string name="et_position">Место</string>
 </resources>
