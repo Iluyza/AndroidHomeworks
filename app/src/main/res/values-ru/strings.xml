@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name">Список</string>
+    <string name="floating_add_button">Добавить кнопку</string>
+    <string name="delete_button">Удалить кнопку</string>
+    <string name="hello_blank_fragment">Новый фрагмент</string>
+    <string name="btn_add">Добавить</string>
+    <string name="et_description">Описание</string>
+    <string name="et_title">Заголовок</string>
+    <string name="et_position">Место</string>
+</resources>
