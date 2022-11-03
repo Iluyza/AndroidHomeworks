@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nested_nav_graph">
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="ru.itis.persikill.androidhomeworks.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/financeFragment"
+        android:name="ru.itis.persikill.androidhomeworks.FinanceFragment"
+        android:label="fragment_finance"
+        tools:layout="@layout/fragment_finance" />
+    <fragment
+        android:id="@+id/catalogFragment2"
+        android:name="ru.itis.persikill.androidhomeworks.CatalogFragment"
+        android:label="fragment_catalog"
+        tools:layout="@layout/fragment_catalog" />
+    <fragment
+        android:id="@+id/supportFragment"
+        android:name="ru.itis.persikill.androidhomeworks.SupportFragment"
+        android:label="fragment_support"
+        tools:layout="@layout/fragment_support" />
+    <include app:graph="@navigation/nested_nav_graph" />
+</navigation>
